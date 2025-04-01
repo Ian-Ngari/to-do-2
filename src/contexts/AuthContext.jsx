@@ -9,7 +9,7 @@ const AuthProvider = ({ children }) => {
   });
 
   const login = (username, password) => {
-    // Simple validation
+    
     if (!username.trim() || !password) return false;
     
     const userData = { username };

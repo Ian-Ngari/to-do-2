@@ -15,7 +15,6 @@ const TaskProvider = ({ children }) => {
     localStorage.setItem('tasks', JSON.stringify(tasks));
   }, [tasks]);
 
-  // CRUD Operations
   const addTask = (task) => {
     setTasks([...tasks, { ...task, id: Date.now(), completed: false }]);
   };
@@ -34,7 +33,7 @@ const TaskProvider = ({ children }) => {
     ));
   };
 
-  // Filtering logic
+  
   const filteredTasks = tasks.filter(task => {
     const matchesFilter = filter === 'all' || 
       (filter === 'completed' && task.completed) || 
