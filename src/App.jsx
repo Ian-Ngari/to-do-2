@@ -1,5 +1,5 @@
 import React from 'react';
-import { AuthProvider } from './contexts/AuthContext';
+import AuthProvider from './contexts/AuthContext';
 import TaskProvider from './contexts/TaskContext';
 import Navbar from './components/Navbar';
 import Auth from './components/Auth';
